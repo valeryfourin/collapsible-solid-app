@@ -17,7 +17,7 @@ function App() {
 		<>
 			<Collapsible isOpened={isControlledOpened()} onToggle={handleToggle}>
 				<CollapsibleTrigger
-					class="px-4 py-2 my-2 border border-indigo-500 bg-indigo-500 text-white rounded-md transition duration-300 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"
+					class="px-4 py-2 my-2 border border-indigo-500 bg-indigo-500 text-white rounded-md transition duration-300 ease select-none hover:bg-indigo-600"
 				>
 					Controlled Collapsible
 					<span class={`ml-2 inline-block transform transition-transform duration-300 ${isControlledOpened() ? "rotate-180" : "rotate-0"}`}>˅</span>
@@ -36,7 +36,7 @@ function App() {
 			<Collapsible as="section" ref={setRef}>
 				<CollapsibleTrigger
 					as="button"
-					class="px-4 py-2 my-2 data-[state=open]:animate-wiggle border border-teal-500 bg-teal-500 text-white rounded-md transition duration-300 ease select-none hover:bg-teal-600 focus:outline-none focus:shadow-outline"
+					class="px-4 py-2 my-2 data-[state=open]:animate-wiggle border border-teal-500 bg-teal-500 text-white rounded-md transition duration-300 ease select-none hover:bg-teal-600"
 				>
 					Uncontrolled Collapsible
 				</CollapsibleTrigger>

@@ -40,7 +40,6 @@ export function CollapsibleTrigger<C extends ElementType>(props: CollapsibleTrig
 			onKeyDown={handleKeyDown}
 			ref={setTriggerRef}
 			role="button"
-			tabIndex={0}
 			{...rest}
 		>
 			{local.children ?? label()}
